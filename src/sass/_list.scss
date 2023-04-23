@@ -1,0 +1,192 @@
+$black-text-cl: #000000;
+$accent-text-cl: #b92f2c;
+
+/* Order */
+$items: 3;
+$indent: 20px;
+
+/* Animation cubic timing function */
+$cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.list {
+  background-color: $background-color-main;
+
+  // @media screen and (min-width: $mobile) {
+  //   padding-top: 20px;
+  // }
+
+  // @media screen and (min-width: $tablet) {
+  //    padding-top: 32px;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   padding-top: 32px;
+  // }
+  .container {
+    background-color: $background-color1;
+    padding: 30px 40px;
+
+  li {
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0;
+    padding: 12px 8px 12px 40px;
+    background: $background-color4;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    // &:nth-child(odd) {
+    //   background: $background-color5;
+    // }
+    .checked {
+      background: $background-color6;
+      color: $text-color2;
+      text-decoration: line-through;
+      
+      /* Add a "checked" mark when clicked on */
+      &:before{
+        content: '';
+        position: absolute;
+        border-color: $background-color3;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+      }
+    }
+    
+    /* Darker background-color on hover */
+    &:hover {
+      background: $background-color-hover;
+    }
+  }
+  
+      /* When clicked on, add a background color and strike out text */
+  .checked {
+    background: $background-color6;
+    color: $text-color1;
+    text-decoration: line-through;
+
+    /* Add a "checked" mark when clicked on */
+    &:before{
+      content: '';
+      position: absolute;
+      border-color: $background-color3;
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      top: 10px;
+      left: 16px;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 7px;
+    }
+  }
+  
+    
+  
+  
+  
+  
+  /* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+  // &__list {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   gap: $indent;
+    // @media screen and (min-width: $tablet) {
+    //   $indent: 32px;
+    //   gap: $indent;
+    // }
+    // @media screen and (min-width: $desktop) {
+    //   $indent: 16px;
+    //   gap: $indent;
+    // }
+  // }
+
+  // &__card {
+  //   cursor: pointer;
+  //   @media screen and (min-width: $tablet) {
+  //     $indent: 32px;
+  //     $items: 2;
+  //     width: calc((100% - ($indent) * (($items) - 1)) / ($items));
+  //   }
+
+  //   @media screen and (min-width: $desktop) {
+  //     $indent: 16px;
+  //     $items: 3;
+  //     width: calc((100% - ($indent) * (($items) - 1)) / ($items));
+  //   }
+  // }
+
+  // &__card-photo {
+  //   margin-bottom: 10px;
+  //   width: 280px;
+  //   height: 402px;
+
+  //   border-radius: 5px;
+  //   transition: box-shadow $cubic;
+
+  //   @media screen and (min-width: $tablet) {
+  //     margin-bottom: 8px;
+  //     width: 336px;
+  //     height: 455px;
+  //   }
+  //   @media screen and (min-width: $desktop) {
+  //     margin-bottom: 12px;
+  //     width: 395px;
+  //     height: 574px;
+  //   }
+  //   .movies__card:hover & {
+  //     box-shadow: 0px 0px 21px 3px $accent-text-cl;
+  //   }
+  // }
+  // &__card-title {
+  //   margin-bottom: 4px;
+  //   font-size: 12px;
+  //   line-height: 1.17;
+  //   color: $black-text-cl;
+  //   @media screen and (min-width: $tablet) {
+  //     line-height: 1.33;
+  //   }
+  //   @media screen and (min-width: $desktop) {
+  //     font-size: 20px;
+  //     line-height: 1.2;
+  //   }
+  // }
+
+  // &__card-genres {
+  //   font-size: 12px;
+  //   line-height: 1.17;
+  //   color: $accent-text-cl;
+  //   @media screen and (min-width: $tablet) {
+  //     line-height: 1.33;
+  //   }
+  //   @media screen and (min-width: $desktop) {
+  //     font-size: 20px;
+  //     line-height: 1.2;
+  //   }
+  // }
+  }
+}
